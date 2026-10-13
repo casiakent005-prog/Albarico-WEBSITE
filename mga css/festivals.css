@@ -1,0 +1,164 @@
+.festivals-intro {
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(26, 26, 26, 0.85);
+  max-width: 940px;
+  margin-bottom: 40px;
+}
+
+.festivals-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.1);
+  margin-bottom: 40px;
+}
+
+.showing-text {
+  font-size: 13px;
+  color: rgba(26, 26, 26, 0.6);
+}
+
+.month-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.month-tab {
+  padding: 8px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(26, 26, 26, 0.2);
+  border-radius: 4px;
+  color: rgba(26, 26, 26, 0.7);
+  transition: all 0.2s ease;
+}
+
+.month-tab:hover {
+  border-color: var(--terracotta);
+  color: var(--terracotta);
+}
+
+.month-tab.is-active {
+  background: var(--terracotta);
+  border-color: var(--terracotta);
+  color: #fff;
+}
+
+.festivals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.festival-card {
+  padding: 28px;
+  border: 1px solid rgba(26, 26, 26, 0.1);
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.festival-card:hover {
+  border-color: var(--terracotta);
+}
+
+.festival-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.festival-month {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+
+.festival-date {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.festival-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: var(--terracotta);
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.festival-name {
+  font-family: var(--font-tight);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+  color: var(--charcoal);
+}
+
+.festival-location {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-bottom: 14px;
+}
+
+.festival-desc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(26, 26, 26, 0.75);
+}
+
+@media (max-width: 1024px) {
+  .festivals-filter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .month-tabs {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .festivals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .festivals-intro {
+    font-size: 16px;
+  }
+
+  .festival-card {
+    padding: 20px;
+  }
+
+  .festival-name {
+    font-size: 18px;
+  }
+
+  .festival-desc {
+    font-size: 14px;
+  }
+}

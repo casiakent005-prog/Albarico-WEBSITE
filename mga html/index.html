@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cebu Tourism</title>
+    <meta
+      name="description"
+      content="Official-style recreation of the Cebu Provincial Tourism Home page using HTML, CSS, and JavaScript."
+    />
+    <!-- Shared header/footer styles, then Home-only styles -->
+    <link rel="stylesheet" href="../mga css/shared.css" />
+    <link rel="stylesheet" href="../mga css/index.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ========================= HEADER ========================= -->
+    <header class="site-header">
+      <a class="logo" href="index.html">CEBU.</a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <!-- Future pages will reuse this same nav order. -->
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a class="is-active" href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="festivals.html">Festivals</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="pillars.html">Pillars</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li><a href="engagement.html">Engagement</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ========================= HERO ========================= -->
+      <section class="hero" id="top">
+        <div class="hero-slides">
+          <!-- Photos are loaded from the official public Cebu Tourism website. -->
+          <div class="hero-slide is-active">
+            <img src="https://tourism.cebu.gov.ph/images/localized/8876d7a9-copy-of-ram-8243-1-1.jpg" alt="Cebu Province" />
+          </div>
+          <div class="hero-slide">
+            <img src="https://tourism.cebu.gov.ph/images/hero/Alegria-Canyoonering.jpg" alt="Canyoneering in Alegria, Cebu" />
+          </div>
+          <div class="hero-slide">
+            <img src="https://tourism.cebu.gov.ph/images/localized/1bee8a42-moalboal-mikebarrow-5116.jpg" alt="Moalboal reef, Cebu" />
+          </div>
+          <div class="hero-slide">
+            <img src="https://tourism.cebu.gov.ph/images/localized/a6a4d2cc-heritage-church-dusk.jpg" alt="Heritage church at dusk" />
+          </div>
+          <div class="hero-slide is-kenburns">
+            <img src="https://tourism.cebu.gov.ph/images/localized/ff7d80df-whale-sharks-aerial.jpg" alt="Whale sharks of southern Cebu" />
+          </div>
+          <div class="hero-slide">
+            <img src="https://tourism.cebu.gov.ph/images/hero/Bojo-River.jpg" alt="Bojo River in Aloguinsan" />
+          </div>
+          <div class="hero-slide">
+            <img src="https://tourism.cebu.gov.ph/images/hero/Capitol-Building.jpg" alt="Cebu Provincial Capitol" />
+          </div>
+          <div class="hero-slide">
+            <img src="https://tourism.cebu.gov.ph/images/hero/Sinulog-Festival.jpg" alt="Sinulog Festival" />
+          </div>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content measure">
+          <p class="hero-lead">Welcome to</p>
+          <h1 class="hero-title">CEBU</h1>
+          <p class="hero-copy">
+            Beyond the modern skyline lingers an island of enduring faith, weathered heritage, and the quiet warmth carried through generations.
+          </p>
+          <div class="hero-actions">
+            <a class="hero-btn" href="tours.html">Plan Your Visit</a>
+            <a class="hero-btn" href="explore.html">Explore the Province</a>
+          </div>
+        </div>
+
+        <div class="hero-controls">
+          <button class="hero-arrow hero-prev" type="button" aria-label="Previous slide">&#8249;</button>
+          <div class="hero-dots">
+            <button class="hero-dot is-active" type="button" aria-label="Go to slide 1"></button>
+            <button class="hero-dot" type="button" aria-label="Go to slide 2"></button>
+            <button class="hero-dot" type="button" aria-label="Go to slide 3"></button>
+            <button class="hero-dot" type="button" aria-label="Go to slide 4"></button>
+            <button class="hero-dot" type="button" aria-label="Go to slide 5"></button>
+            <button class="hero-dot" type="button" aria-label="Go to slide 6"></button>
+            <button class="hero-dot" type="button" aria-label="Go to slide 7"></button>
+            <button class="hero-dot" type="button" aria-label="Go to slide 8"></button>
+          </div>
+          <button class="hero-arrow hero-next" type="button" aria-label="Next slide">&#8250;</button>
+        </div>
+      </section>
+
+      <!-- ========================= CEBU PROVINCE / FOUR WINDS ========================= -->
+      <section class="section-y" id="featured">
+        <div class="measure">
+          <p class="featured-kicker">Cebu Province</p>
+
+          <div class="featured-grid">
+            <p class="featured-copy">
+              At the heart of the Philippines lies Cebu Province, a destination that blends history, nature, culture, and modern charm into a single unforgettable experience. Cebu is not just one city but a thriving province of 51 towns and cities, each contributing to its reputation as the country’s most compelling tourism hub.
+            </p>
+            <figure class="featured-photo">
+              <img src="https://tourism.cebu.gov.ph/images/hero/Sinulog-Festival.jpg" alt="Sinulog dancers in beaded costume carrying an image of the Santo Niño" />
+              <figcaption class="featured-caption">Sinulog Festival, Cebu City.</figcaption>
+            </figure>
+          </div>
+
+          <h2 class="winds-title">People, commerce, culture, experience — the four winds of the province.</h2>
+
+          <!-- Labels and copy follow the live Home page, including its pairing of titles. -->
+          <div class="winds-grid">
+            <article class="wind-card">
+              <img src="https://tourism.cebu.gov.ph/images/artisan-hands.jpg" alt="Hands at work" />
+              <div>
+                <span class="wind-label wind-people">01 — The People</span>
+                <h3>From galleon decks to global stage</h3>
+                <p>Cebu has been a trading floor for a thousand years. Today, its furniture, guitars, and design houses move from the workshops of Mandaue to showrooms in Milan and Tokyo — a province exporting taste.</p>
+                <p class="script-quote">“Built by the salt-air humidity of the islands.”</p>
+              </div>
+            </article>
+
+            <article class="wind-card">
+              <img src="https://tourism.cebu.gov.ph/images/localized/8385ee8d-people.jpg" alt="Cebuano community" />
+              <div>
+                <span class="wind-label wind-commerce">02 — Commerce</span>
+                <h3>A smile shaped by four centuries</h3>
+                <p>Cebuanos are the descendants of Rajah Humabon's court and Lapu-Lapu's defiance. Four centuries of trade, faith, and typhoons have produced a people who are genuinely warm, genuinely funny, and quietly impossible to rush.</p>
+                <p class="script-quote">“Bisaya ko, taga-Sugbo.”</p>
+              </div>
+            </article>
+
+            <article class="wind-card">
+              <img src="https://tourism.cebu.gov.ph/images/localized/7be88419-culture.jpg" alt="Sinulog dancer" />
+              <div>
+                <span class="wind-label wind-culture">03 — Culture</span>
+                <h3>The dance is the prayer</h3>
+                <p>Sinulog is not a parade. It is a city-wide act of devotion — bodies in two-step, drums in 4/4, candles passing through smoke. The ritual predates the cathedral and outlives every empire that staged it.</p>
+                <p class="script-quote">“The dance is older than the saint.”</p>
+              </div>
+            </article>
+
+            <article class="wind-card">
+              <img src="https://tourism.cebu.gov.ph/images/lechon.jpg" alt="Cebu lechon" />
+              <div>
+                <span class="wind-label wind-experience">04 — Experience</span>
+                <h3>The flavor profile of the south</h3>
+                <p>The lechon of Talisay and Carcar. The tablea sikwate of Argao. The sun-dried mangoes of Mactan, exported to 50 countries and still best eaten fresh off a rooftop. Cebuano food is a celebration of where it came from.</p>
+                <p class="script-quote">“A taste that lingers long after the sun sets.”</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= BEST OF CEBU ========================= -->
+      <section class="best section-y" id="coast">
+        <div class="measure best-layout">
+          <div>
+            <h2>Best of Cebu</h2>
+            <p class="best-intro">
+              A curated collection of Cebu's most iconic destinations and cultural treasures — from world-class natural wonders to time-honored traditions. From the turquoise waters of Bantayan in the north to the majestic whale sharks of Oslob in the south, Cebu Province is a story of many places woven into one destination. It is a living showcase of how the Philippines’ past, present, and future come together — making Cebu not only a gateway but also a journey in itself.
+            </p>
+            <div class="places-nav">
+              <button class="places-arrow places-prev" type="button" aria-label="Previous place">&#8249;</button>
+              <button class="places-arrow places-next" type="button" aria-label="Next place">&#8250;</button>
+              <div class="places-progress" aria-hidden="true"><span></span></div>
+            </div>
+          </div>
+
+          <div class="places-track-wrap">
+            <div class="places-track">
+              <button
+                class="place-card"
+                type="button"
+                data-title="Osmeña Peak"
+                data-loc="Dalaguete-Badian"
+                data-image="https://tourism.cebu.gov.ph/images/localized/8b529271-osme-ia-peak-4.jpg"
+                data-text="A highland ridgeline between Dalaguete and Badian, giving a full view of Cebu’s green spine."
+              >
+                <img src="https://tourism.cebu.gov.ph/images/localized/8b529271-osme-ia-peak-4.jpg" alt="Osmeña Peak" />
+                <div class="place-info">
+                  <p class="place-loc">Dalaguete-Badian</p>
+                  <h3>Osmeña Peak</h3>
+                  <p class="place-more">Read more →</p>
+                </div>
+              </button>
+
+              <button
+                class="place-card"
+                type="button"
+                data-title="Bojo River"
+                data-loc="Aloguinsan"
+                data-image="https://tourism.cebu.gov.ph/images/best-of-cebu/Bojo-River.jpg"
+                data-text="A community-led river cruise through mangroves in Aloguinsan, one of Cebu’s model eco-tourism sites."
+              >
+                <img src="https://tourism.cebu.gov.ph/images/best-of-cebu/Bojo-River.jpg" alt="Bojo River" />
+                <div class="place-info">
+                  <p class="place-loc">Aloguinsan</p>
+                  <h3>Bojo River</h3>
+                  <p class="place-more">Read more →</p>
+                </div>
+              </button>
+
+              <button
+                class="place-card"
+                type="button"
+                data-title="Hinablon sa Argao"
+                data-loc="Argao"
+                data-image="https://tourism.cebu.gov.ph/images/best-of-cebu/Hinablon-sa-Argao.jpg"
+                data-text="Handwoven textiles from Argao, keeping a heritage craft alive in southern Cebu."
+              >
+                <img src="https://tourism.cebu.gov.ph/images/best-of-cebu/Hinablon-sa-Argao.jpg" alt="Hinablon sa Argao" />
+                <div class="place-info">
+                  <p class="place-loc">Argao</p>
+                  <h3>Hinablon sa Argao</h3>
+                  <p class="place-more">Read more →</p>
+                </div>
+              </button>
+
+              <button
+                class="place-card"
+                type="button"
+                data-title="Festivals"
+                data-loc="Provincewide"
+                data-image="https://tourism.cebu.gov.ph/images/best-of-cebu/Festivals.jpg"
+                data-text="More than 55 festivals across the province, from Sinulog in January to intimate town fiestas."
+              >
+                <img src="https://tourism.cebu.gov.ph/images/best-of-cebu/Festivals.jpg" alt="Festivals" />
+                <div class="place-info">
+                  <p class="place-loc">Provincewide</p>
+                  <h3>Festivals</h3>
+                  <p class="place-more">Read more →</p>
+                </div>
+              </button>
+
+              <button
+                class="place-card"
+                type="button"
+                data-title="Ginatilan-Malabuyoc River Adventure: Kabutongan Falls"
+                data-loc="Ginatilan - Malabuyoc"
+                data-image="https://tourism.cebu.gov.ph/images/hero/Alegria-Canyoonering.jpg"
+                data-text="A southern river adventure linking Ginatilan and Malabuyoc. The waterfall photo on the original card could not be copied locally, so this nearby canyoneering image is used as a substitute."
+              >
+                <img src="https://tourism.cebu.gov.ph/images/hero/Alegria-Canyoonering.jpg" alt="Kabutongan Falls river adventure substitute photo from Alegria canyoneering" />
+                <div class="place-info">
+                  <p class="place-loc">Ginatilan - Malabuyoc</p>
+                  <h3>Ginatilan-Malabuyoc River Adventure: Kabutongan Falls</h3>
+                  <p class="place-more">Read more →</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= DISCOVER CEBU MAP ========================= -->
+      <section class="discover section-y" id="discover">
+        <div class="measure">
+          <h2>Discover Cebu</h2>
+          <p>
+            The Cebu Map serves as an interactive visual guide that presents the province's key destinations and tourism offerings in an organized and accessible format. As visitors explore and select each area on the map, they are guided to discover the diverse experiences that Cebu has to offer — from its cultural and heritage sites to its natural attractions, and adventure destinations.
+          </p>
+          <p>
+            It provides a comprehensive overview that allows visitors to navigate the province with ease, offering a clearer appreciation of Cebu's distinct tourism landscape across its districts.
+          </p>
+          <p class="map-title">Cebu Map</p>
+          <div class="map-frame">
+            <!-- This iframe is the same public map used on the official site. -->
+            <iframe
+              src="https://www.mata.ph/cebu/"
+              title="Interactive Map of Cebu Province"
+              loading="lazy"
+              allow="accelerometer; gyroscope; xr-spatial-tracking; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= CHAPTERS ========================= -->
+      <section class="chapters" id="chapters">
+        <h2>Open a chapter.<br />The province answers.</h2>
+
+        <div class="chapter-rail">
+          <!-- 01 History -->
+          <article class="chapter-panel">
+            <img src="https://tourism.cebu.gov.ph/images/hero/Capitol-Building.jpg" alt="" />
+            <div class="chapter-shade"></div>
+            <div class="chapter-spine">
+              <span class="num c-terracotta">01</span>
+              <span class="label">A Province Shaped by History</span>
+            </div>
+            <button class="chapter-close" type="button" aria-label="Collapse chapter">×</button>
+            <div class="chapter-open">
+              <p class="num c-terracotta">01</p>
+              <h3>A Province Shaped by History</h3>
+              <p class="chapter-lede">The province of Cebu is like a loving grandmother, rich in stories, wisdom, warm hospitality, and tradition.</p>
+              <p class="chapter-body">The cobblestones of Carcar still whisper in Spanish. The bells of the Basilica del Santo Niño have tolled over this city for more than four centuries. Every weathered capiz window in Parian frames a chapter that predates the republic itself — and the province is still adding to it.</p>
+              <div class="chapter-stats">
+                <div><strong>1521</strong><span>First Mass</span></div>
+                <div><strong>1565</strong><span>First City, PH</span></div>
+                <div><strong>5</strong><span>Heritage Towns</span></div>
+              </div>
+              <p class="chapter-quote">“History here is not in museums. It is in the doorways.”</p>
+              <a class="chapter-link" href="history.html">Read Full Chapter →</a>
+            </div>
+          </article>
+
+          <!-- 02 Festivals -->
+          <article class="chapter-panel">
+            <img src="https://tourism.cebu.gov.ph/images/hero/Sinulog-Festival.jpg" alt="" />
+            <div class="chapter-shade"></div>
+            <div class="chapter-spine">
+              <span class="num c-magenta">02</span>
+              <span class="label">A Cultural Tapestry of Festivals</span>
+            </div>
+            <button class="chapter-close" type="button" aria-label="Collapse chapter">×</button>
+            <div class="chapter-open">
+              <p class="num c-magenta">02</p>
+              <h3>A Cultural Tapestry of Festivals</h3>
+              <p class="chapter-lede">Cebuanos celebrate their culture through festivals filled with color, faith, music, and community spirit. Across the province, these celebrations reflect the rich traditions, creativity, and identity of every town and city.</p>
+              <p class="chapter-body">Cebu's calendar is a year-round tapestry of celebrations - from the monumental Sinulog in January that draws millions of pilgrims, to the intimate town fiestas that preserve centuries-old traditions.</p>
+              <div class="chapter-stats">
+                <div><strong>55+</strong><span>Total Festivals</span></div>
+                <div><strong>1M+</strong><span>Sinulog Pilgrims</span></div>
+                <div><strong>44+</strong><span>Celebrating Towns</span></div>
+              </div>
+              <p class="chapter-quote">“The dance is older than the saint.”</p>
+              <a class="chapter-link" href="festivals.html">Read Full Chapter →</a>
+            </div>
+          </article>
+
+          <!-- 03 Explore -->
+          <article class="chapter-panel">
+            <img src="https://tourism.cebu.gov.ph/images/localized/6ce2cff1-copy-of-cebu-1.jpg" alt="" />
+            <div class="chapter-shade"></div>
+            <div class="chapter-spine">
+              <span class="num c-ocean">03</span>
+              <span class="label">Explore Cebu</span>
+            </div>
+            <button class="chapter-close" type="button" aria-label="Collapse chapter">×</button>
+            <div class="chapter-open">
+              <p class="num c-ocean">03</p>
+              <h3>Explore Cebu</h3>
+              <p class="chapter-lede">Discover all 51 cities and municipalities across Cebu Province — each with its own story, landscape, and culture waiting to be explored.</p>
+              <p class="chapter-body">From the whale sharks of Oslob to the sardine runs of Moalboal, from the island serenity of Bantayan to the mountain trails of Compostela — every corner of Cebu has a destination worth discovering.</p>
+              <p class="chapter-quote">“Every municipality is a chapter. Every city is a story.”</p>
+              <a class="chapter-link" href="explore.html">Read Full Chapter →</a>
+            </div>
+          </article>
+
+          <!-- 04 Pillars -->
+          <article class="chapter-panel">
+            <img src="https://tourism.cebu.gov.ph/images/localized/1c39fdc6-website-3.jpg" alt="" />
+            <div class="chapter-shade"></div>
+            <div class="chapter-spine">
+              <span class="num c-amber">04</span>
+              <span class="label">Cebu's Distinct Pillars</span>
+            </div>
+            <button class="chapter-close" type="button" aria-label="Collapse chapter">×</button>
+            <div class="chapter-open">
+              <p class="num c-amber">04</p>
+              <h3>Cebu's Distinct Pillars</h3>
+              <p class="chapter-lede">From its thriving cities to its heritage towns, Cebu is a province where culture, enterprise, and innovation move hand in hand.</p>
+              <p class="chapter-body">Its rich history, vibrant festivals, world-class destinations, and entrepreneurial spirit have made Cebu a recognized gateway for tourism, trade, and investment.</p>
+              <div class="chapter-stats">
+                <div><strong>200+</strong><span>Furniture Makers</span></div>
+                <div><strong>120</strong><span>Export Markets</span></div>
+                <div><strong>1665</strong><span>Cacao arrives, PH</span></div>
+              </div>
+              <p class="chapter-quote">“Built by the salt-air humidity of the islands.”</p>
+              <a class="chapter-link" href="pillars.html">Read Full Chapter →</a>
+            </div>
+          </article>
+
+          <!-- 05 Tours -->
+          <article class="chapter-panel">
+            <img src="https://tourism.cebu.gov.ph/images/localized/c5eb9a34-website.png" alt="" />
+            <div class="chapter-shade"></div>
+            <div class="chapter-spine">
+              <span class="num c-ocean">05</span>
+              <span class="label">Thematic Tours</span>
+            </div>
+            <button class="chapter-close" type="button" aria-label="Collapse chapter">×</button>
+            <div class="chapter-open">
+              <p class="num c-ocean">05</p>
+              <h3>Thematic Tours</h3>
+              <p class="chapter-lede">More than five hundred kilometers of coastline and a green spine of mountains — each itinerary here covers ground, not just sand.</p>
+              <p class="chapter-body">Reefs, sandbars, and limestone cliffs stretch across the south; Sirao's celosia fields peak from January through May; the Osmeña Peak ridgeline gives you the full spine of the island in one view.</p>
+              <div class="chapter-stats">
+                <div><strong>500+</strong><span>Coastline km</span></div>
+                <div><strong>167</strong><span>Islands &amp; Cays</span></div>
+                <div><strong>12</strong><span>Curated Routes</span></div>
+              </div>
+              <p class="chapter-quote">“The island is taller than its postcards suggest.”</p>
+              <a class="chapter-link" href="tours.html">Read Full Chapter →</a>
+            </div>
+          </article>
+
+          <!-- 06 Directory -->
+          <article class="chapter-panel">
+            <img src="https://tourism.cebu.gov.ph/images/localized/5fb116a4-website-1.jpg" alt="" />
+            <div class="chapter-shade"></div>
+            <div class="chapter-spine">
+              <span class="num c-ocean">06</span>
+              <span class="label">Tourism Directory</span>
+            </div>
+            <button class="chapter-close" type="button" aria-label="Collapse chapter">×</button>
+            <div class="chapter-open">
+              <p class="num c-ocean">06</p>
+              <h3>Tourism Directory</h3>
+              <p class="chapter-lede">An editorialized register of stays, ateliers, tables, and guides that hold to the province's quiet standard of care.</p>
+              <p class="chapter-body">Not the loudest names, but the steadiest ones — the inns that remember your coffee, the captains who know the reef by feel, the kitchens whose recipes pre-date the highway.</p>
+              <div class="chapter-stats">
+                <div><strong>637</strong><span>DOT-accredited stays</span></div>
+                <div><strong>7</strong><span>Star-rated</span></div>
+                <div><strong>1610</strong><span>Guides on File</span></div>
+              </div>
+              <p class="chapter-quote">“An index of the verified and the quietly excellent.”</p>
+              <a class="chapter-link" href="directory.html">Read Full Chapter →</a>
+            </div>
+          </article>
+
+          <!-- 07 Policies -->
+          <article class="chapter-panel">
+            <img src="https://tourism.cebu.gov.ph/images/localized/63ebb00e-kk.jpg" alt="" />
+            <div class="chapter-shade"></div>
+            <div class="chapter-spine">
+              <span class="num c-forest">07</span>
+              <span class="label">Tourism Policies</span>
+            </div>
+            <button class="chapter-close" type="button" aria-label="Collapse chapter">×</button>
+            <div class="chapter-open">
+              <p class="num c-forest">07</p>
+              <h3>Tourism Policies</h3>
+              <p class="chapter-lede">Marine sanctuaries, heritage zoning, carrying-capacity caps. Conservation here is not a brochure — it is an ordinance.</p>
+              <p class="chapter-body">Marine sanctuaries protect the western reefs. Heritage zoning covers the old stone towns of Carcar, Argao, and Boljoon. Carrying-capacity rules govern the most visited sites.</p>
+              <p class="chapter-quote">“The reef is protected on paper before it is protected on tour.”</p>
+              <a class="chapter-link" href="policies.html">Read Full Chapter →</a>
+            </div>
+          </article>
+
+          <!-- 08 Statistics -->
+          <article class="chapter-panel">
+            <img src="https://tourism.cebu.gov.ph/images/localized/8e50b85b-lll.jpg" alt="" />
+            <div class="chapter-shade"></div>
+            <div class="chapter-spine">
+              <span class="num c-amber">08</span>
+              <span class="label">Tourism Research and Statistics</span>
+            </div>
+            <button class="chapter-close" type="button" aria-label="Collapse chapter">×</button>
+            <div class="chapter-open">
+              <p class="num c-amber">08</p>
+              <h3>Tourism Research and Statistics</h3>
+              <p class="chapter-lede">Arrivals, seasonality, length-of-stay — the metrics behind the romance, presented as narrative rather than dashboard.</p>
+              <p class="chapter-body">January peaks with Sinulog. April quiets for Holy Week. June brings the rains and the highland green. The data does not surprise — it just confirms what the weather already tells you.</p>
+              <div class="chapter-stats">
+                <div><strong>5.4M</strong><span>Annual Visitors</span></div>
+                <div><strong>Jan</strong><span>Peak Month</span></div>
+                <div><strong>3.8 d</strong><span>Avg. Stay</span></div>
+              </div>
+              <p class="chapter-quote">“The numbers peak in January. Everything else is the in-between.”</p>
+              <a class="chapter-link" href="statistics.html">Read Full Chapter →</a>
+            </div>
+          </article>
+
+          <!-- 09 Engagement -->
+          <article class="chapter-panel">
+            <img src="https://tourism.cebu.gov.ph/images/localized/f2c7939f-badian-lambug-3-1.jpg" alt="" />
+            <div class="chapter-shade"></div>
+            <div class="chapter-spine">
+              <span class="num c-terracotta">09</span>
+              <span class="label">Tourism Engagement</span>
+            </div>
+            <button class="chapter-close" type="button" aria-label="Collapse chapter">×</button>
+            <div class="chapter-open">
+              <p class="num c-terracotta">09</p>
+              <h3>Tourism Engagement</h3>
+              <p class="chapter-lede">The Province of Cebu continuously advances its tourism industry through strategic programs, partnerships, and promotional initiatives that strengthen its position as a premier tourism destination.</p>
+              <div class="chapter-stats">
+                <div><strong>1632</strong><span>Trained Stakeholders</span></div>
+                <div><strong>11</strong><span>Travel Fairs</span></div>
+                <div><strong>8</strong><span>Event Hosting</span></div>
+              </div>
+              <p class="chapter-quote">“Tourism thrives where people learn, connect, and collaborate”</p>
+              <a class="chapter-link" href="engagement.html">Read Full Chapter →</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Mobile version of the same nine chapters -->
+        <div class="mobile-chapters">
+          <div class="mobile-chapter">
+            <button type="button"><span class="c-terracotta">01</span><span>A Province Shaped by History</span></button>
+            <div class="panel">
+              <p>The province of Cebu is like a loving grandmother, rich in stories, wisdom, warm hospitality, and tradition.</p>
+              <p class="chapter-quote">“History here is not in museums. It is in the doorways.”</p>
+              <a class="chapter-link" href="history.html">Read Full Chapter →</a>
+            </div>
+          </div>
+          <div class="mobile-chapter">
+            <button type="button"><span class="c-magenta">02</span><span>A Cultural Tapestry of Festivals</span></button>
+            <div class="panel">
+              <p>Cebu's calendar is a year-round tapestry of celebrations, from Sinulog in January to intimate town fiestas.</p>
+              <a class="chapter-link" href="festivals.html">Read Full Chapter →</a>
+            </div>
+          </div>
+          <div class="mobile-chapter">
+            <button type="button"><span class="c-ocean">03</span><span>Explore Cebu</span></button>
+            <div class="panel">
+              <p>Discover all 51 cities and municipalities across Cebu Province.</p>
+              <a class="chapter-link" href="explore.html">Read Full Chapter →</a>
+            </div>
+          </div>
+          <div class="mobile-chapter">
+            <button type="button"><span class="c-amber">04</span><span>Cebu's Distinct Pillars</span></button>
+            <div class="panel">
+              <p>From thriving cities to heritage towns, culture, enterprise, and innovation move hand in hand.</p>
+              <a class="chapter-link" href="pillars.html">Read Full Chapter →</a>
+            </div>
+          </div>
+          <div class="mobile-chapter">
+            <button type="button"><span class="c-ocean">05</span><span>Thematic Tours</span></button>
+            <div class="panel">
+              <p>More than five hundred kilometers of coastline and a green spine of mountains.</p>
+              <a class="chapter-link" href="tours.html">Read Full Chapter →</a>
+            </div>
+          </div>
+          <div class="mobile-chapter">
+            <button type="button"><span class="c-ocean">06</span><span>Tourism Directory</span></button>
+            <div class="panel">
+              <p>An editorialized register of stays, ateliers, tables, and guides.</p>
+              <a class="chapter-link" href="directory.html">Read Full Chapter →</a>
+            </div>
+          </div>
+          <div class="mobile-chapter">
+            <button type="button"><span class="c-forest">07</span><span>Tourism Policies</span></button>
+            <div class="panel">
+              <p>Marine sanctuaries, heritage zoning, carrying-capacity caps.</p>
+              <a class="chapter-link" href="policies.html">Read Full Chapter →</a>
+            </div>
+          </div>
+          <div class="mobile-chapter">
+            <button type="button"><span class="c-amber">08</span><span>Tourism Research and Statistics</span></button>
+            <div class="panel">
+              <p>Arrivals, seasonality, and length-of-stay presented as narrative rather than dashboard.</p>
+              <a class="chapter-link" href="statistics.html">Read Full Chapter →</a>
+            </div>
+          </div>
+          <div class="mobile-chapter">
+            <button type="button"><span class="c-terracotta">09</span><span>Tourism Engagement</span></button>
+            <div class="panel">
+              <p>Training, travel fairs, event hosting, and stakeholder collaboration across the province.</p>
+              <a class="chapter-link" href="engagement.html">Read Full Chapter →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= CLOSING ========================= -->
+      <section class="closing">
+        <img src="https://tourism.cebu.gov.ph/images/closing.jpg" alt="Cebu city lights at twilight from the surrounding mountains" />
+        <div class="closing-shade"></div>
+        <div class="closing-inner">
+          <p>Cebu lies at the very heart of the Philippine archipelago, a strategic, well-connected hub that links people, commerce, culture, and experiences across the country.</p>
+          <p>Cebu is a thriving center of industry, creativity, heritage, cuisine, and adventure and one of the most visited provinces, placing it at the forefront of tourism and investment across the country.</p>
+          <p>In Cebu, business meets leisure, where you can connect in top-tier venues and explore amazing destinations with excellent service and a commitment to sustainability.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================= FOOTER ========================= -->
+    <div class="reading-bar">
+      <div class="measure reading-bar-inner">
+        <div>
+          <p class="reading-kicker">Start reading</p>
+          <a class="reading-title" href="history.html">A Province Shaped by History →</a>
+        </div>
+        <a class="reading-back" href="index.html">← Back to cover</a>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="measure footer-grid">
+        <div>
+          <div class="footer-seals">
+            <img src="https://tourism.cebu.gov.ph/cebu-province-seal.png" alt="Official Seal of the Province of Cebu" />
+            <img src="https://tourism.cebu.gov.ph/bagong-pilipinas-nobg.png" alt="Bagong Pilipinas" />
+          </div>
+          <p class="footer-office-name">Cebu Provincial Tourism Office</p>
+          <p class="footer-address">
+            Provincial Capitol Building<br />
+            Osmeña Boulevard, Cebu City<br />
+            Cebu 6000, Philippines
+          </p>
+          <p class="footer-meta"><strong>Telephone</strong> <a href="tel:0328882328">(032) 888 2328</a> local 3902 | 3006</p>
+          <p class="footer-meta"><strong>Email</strong> <a href="mailto:tourism@cebu.gov.ph">tourism@cebu.gov.ph</a></p>
+          <p class="footer-meta"><strong>Office hours</strong> Mon–Fri, 8:00am–5:00pm</p>
+          <div class="social-row">
+            <a class="social-pill" href="https://www.facebook.com/CebuTourismOffice" target="_blank" rel="noopener">Facebook</a>
+            <span class="social-pill is-disabled" title="Account to be confirmed by CPTO">Instagram</span>
+            <span class="social-pill is-disabled" title="Account to be confirmed by CPTO">TikTok</span>
+            <span class="social-pill is-disabled" title="Account to be confirmed by CPTO">YouTube</span>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Footer — Discover">
+          <h3>Discover</h3>
+          <a href="history.html">History</a>
+          <a href="festivals.html">Festivals</a>
+          <a href="explore.html">Explore</a>
+          <a href="pillars.html">Pillars</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Footer — Plan">
+          <h3>Plan</h3>
+          <a href="tours.html">Tours</a>
+          <a href="directory.html">Tourism Directory</a>
+          <a href="statistics.html">Statistics</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Footer — Office">
+          <h3>Office</h3>
+          <a href="policies.html">Policies</a>
+          <a href="engagement.html">Tourism Engagement</a>
+          <a href="https://tourism.cebu.gov.ph/privacy/">Privacy</a>
+          <a href="https://tourism.cebu.gov.ph/accessibility/">Accessibility</a>
+        </nav>
+      </div>
+
+      <div class="measure footer-bottom">
+        <p>© 2026 Cebu Provincial Tourism Office · All rights reserved</p>
+        <p>Last updated 25 September 2026</p>
+      </div>
+    </footer>
+
+    <!-- Simple destination overlay used by Best of Cebu cards -->
+    <div class="modal" id="place-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-card">
+        <button class="modal-close" type="button" aria-label="Close">×</button>
+        <img id="modal-img" alt="" />
+        <p class="place-loc" id="modal-loc"></p>
+        <h3 id="modal-title"></h3>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+
+    <script src="../mga js/shared.js"></script>
+    <script src="../mga js/index.js"></script>
+  </body>
+</html>
